@@ -1,0 +1,156 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fbfd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(243, 237, 237);
+  box-shadow: 0 1px 2px rgba(201, 195, 195, 0.5);
+}
+
+header .wrapper {
+  width: 800px;
+  margin: 0 auto;
+  height: 80px;
+  background: #f2c9c9;
+  position: relative;
+}
+
+header .wrapper h1,
+header .wrapper h2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10%;
+  color: #502828;
+}
+header .wrapper .logo {
+  position: absolute;
+  top: 6%;
+}
+
+header .wrapper h2 {
+  left: 125px;
+}
+
+/*#FF813F*/
+
+section.table-view-control,
+section.products,
+section.cart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.table-view-control,
+section.products {
+  margin: 24px auto 12px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(190, 190, 190, 0.5);
+  border-radius: 8px;
+}
+
+section.table-view-control {
+  padding: 12px;
+  background-color: rgb(247, 239, 239);
+}
+
+section.table-view-control > div,
+section.table-view-control .filters > div {
+  margin-bottom: 24px;
+}
+
+section.products > ul {
+  padding: 0;
+}
+
+section.products > ul > li > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+}
+
+section.products > ul > li > ul > li:first-child {
+  width: 200px;
+}
+
+section.products > ul > li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+section.products li div,
+section.products li button {
+  margin-right: 12px;
+  width: 100px;
+}
+
+section.products li .name {
+  width: 200px;
+}
+section.products .tag {
+  width: 800px;
+  margin: 0 auto;
+  height: 50px;
+  background: #f8efef;
+  position: relative;
+}
+section.products h4 {
+  position: absolute;
+  top: 40%;
+  padding-bottom: 4%;
+  transform: translateY(-50%);
+  padding-left: 0.5%;
+  color: #502828;
+}
+section.products .price {
+  left: 380px;
+}
+section.products .rating {
+  left: 580px;
+}
+
+section.cart {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+section.cart ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section.cart ul > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+section.cart ul > li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
